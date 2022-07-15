@@ -1,0 +1,24 @@
+.cta {
+  background-color: #00b712;
+  /* background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%); */
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.btn-join {
+  border-color: white;
+  color: white;
+  margin-left: 2rem;
+}
+
+.btn-join:hover {
+  background-color: white;
+  color: #5aff15;
+}
+
+@media (max-width: 500px) {
+}

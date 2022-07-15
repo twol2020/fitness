@@ -1,0 +1,40 @@
+.navbar {
+  height: 60px;
+  font-size: 1.2rem;
+  background-color: hwb(0 0% 100% / 0.274);
+}
+
+.navbar-center {
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-weight: 100;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navbar-center li {
+  padding: 0 3rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+
+  height: 100%;
+}
+
+/* .navbar-link.active {
+  text-decoration: underline;
+} */
+
+@media (max-width: 500px) {
+  .navbar-link {
+    display: none;
+  }
+}

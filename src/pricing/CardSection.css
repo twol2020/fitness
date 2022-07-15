@@ -1,0 +1,120 @@
+.card-section {
+  background-color: #00b712;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  height: 65rem;
+  width: 100vw;
+  position: absolute;
+  top: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5rem;
+  box-shadow: rgba(33, 35, 38, 0.315) 0px 10px 10px -10px;
+}
+
+.value {
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 27, 27, 1) 0%,
+    rgba(84, 84, 84, 1) 100%
+  );
+  color: white;
+  /* transform: translateY(-4rem); */
+  height: 35rem;
+}
+
+.value svg {
+  color: #00b712;
+}
+
+.value button {
+  background-color: #00b712;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  color: white;
+  border: none;
+}
+
+.value button:hover {
+  background-color: white;
+  background-image: none;
+  color: #00b712;
+}
+
+.value:hover {
+  transform: translateY(-8px);
+}
+
+.appear {
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeX {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-section {
+    background-color: #5aff15;
+    background-image: none;
+    height: 90rem;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    box-shadow: rgba(33, 35, 38, 0.315) 0px 10px 10px -10px;
+  }
+
+  /* .card-section::before {
+    content: "";
+    height: 80rem;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    top: -50rem;
+    z-index: 9999;
+  } */
+
+  .placeholder {
+    background: transparent;
+
+    height: 50vh;
+    z-index: -999;
+    position: absolute;
+    background-color: #5aff15;
+    top: 0;
+    width: 100%;
+  }
+
+  .appear {
+    opacity: 1;
+    animation-name: fadeX;
+    animation-duration: 1s;
+  }
+}

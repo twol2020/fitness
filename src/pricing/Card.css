@@ -1,0 +1,91 @@
+.card {
+  padding: 2rem 0;
+  margin: 0 4rem;
+  width: 24rem;
+  height: 30rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  transition: all 0.25s ease-in;
+  color: #777;
+  opacity: 0;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card-heading {
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  font-size: 2.4rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  padding: 1rem;
+}
+
+.card-heading span svg {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #00b712;
+}
+
+.pricing-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 4rem;
+  margin: 0 auto;
+}
+.card ul svg {
+  margin-right: 0.5rem;
+}
+
+.placeholder {
+  background: transparent;
+  height: 50rem;
+  z-index: -99;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 2rem 0;
+    margin: 2rem 4rem;
+    width: 24rem;
+    height: 30rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition: all 0.25s ease-in;
+    color: #777;
+    opacity: 0;
+  }
+
+  .card ul li {
+    padding: 0.25rem;
+    font-size: 1.2rem;
+  }
+
+  .card-header {
+    font-size: 1.8rem;
+  }
+
+  .card ul {
+    margin-bottom: 1rem;
+  }
+}

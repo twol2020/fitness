@@ -1,0 +1,21 @@
+.about {
+  background-color: #5aff15;
+  height: 60rem;
+  width: 100vw;
+  position: absolute;
+  top: 70%;
+}
+/* .about::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  z-index: -1;
+  height: 20rem;
+  width: 100%;
+  background-color: #5aff15;
+} */
+
+.about-img {
+  width: 50vw;
+  height: auto;
+}
