@@ -3,6 +3,7 @@ import { LayoutGroup, motion } from "framer-motion";
 import { Routes, Route, NavLink } from "react-router-dom";
 import Button from "../../../shared/UIElements/Button";
 import "./Navbar.css";
+import Classes from "../../../pages/classes/Classes";
 function Navbar(props) {
   return (
     <nav className="navbar">
@@ -15,7 +16,7 @@ function Navbar(props) {
         <li>
           <div className="navbar-center">
             <motion.li>
-              <NavLink to="/" className="navbar-link">
+              <NavLink to="/classes" className="navbar-link">
                 Classes
               </NavLink>
             </motion.li>
